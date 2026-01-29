@@ -1,15 +1,15 @@
-import { pages } from "../controllers/index.js";
+import { pages } from '../controllers/index.js';
 
 const router = async (route) => {
-  let content = document.getElementById("root");
-  content.innerHTML = "";
+  let content = document.getElementById('root');
+  content.innerHTML = '';
 
 
   switch (route) {
-    case "#/": {
+    case '#/': {
       return content.appendChild(pages.home());
     }
-    case "#/posts": {
+    case '#/posts': {
       return content.appendChild(await pages.posts());
     }
     default: {
