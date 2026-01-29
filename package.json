@@ -4,27 +4,28 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "build": "npm run clean && webpack --config ./webpack/webpack.config.js --env env=prod",
-    "start": "webpack serve --config ./webpack/webpack.config.js --env env=dev --open",
+    "build": "npm run clean && webpack --config ./webpack/webpack.config.mjs --env env=prod",
+    "start": "webpack serve --config ./webpack/webpack.config.mjs --env env=dev --open",
     "clean": "rimraf dist",
     "lint": "npx eslint src --ext .js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
-    "bootstrap": "^5.0.2",
-    "css-loader": "^5.2.6",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.0.0",
-    "node-sass": "^6.0.1",
-    "rimraf": "^3.0.2",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.0.0",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "eslint": "^8.57.0"
+    "bootstrap": "^5.3.8",
+    "css-loader": "^7.1.3",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.6",
+    "mini-css-extract-plugin": "^2.10.0",
+    "rimraf": "^6.1.2",
+    "sass-loader": "^16.0.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3",
+    "eslint": "^9.39.2",
+    "sass": "^1.77.4"
   }
 }
