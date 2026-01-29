@@ -4,7 +4,6 @@ const router = async (route) => {
   let content = document.getElementById("root");
   content.innerHTML = "";
 
-  console.log(route);
 
   switch (route) {
     case "#/": {
