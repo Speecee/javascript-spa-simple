@@ -7,7 +7,8 @@
     "build": "npm run clean && webpack --config ./webpack/webpack.config.mjs --env env=prod",
     "start": "webpack serve --config ./webpack/webpack.config.mjs --env env=dev --open",
     "clean": "rimraf dist",
-    "lint": "npx eslint src --ext .js"
+    "lint": "npx eslint src --ext .js",
+    "test": "node --test test/test-runner.js"
   },
   "keywords": [],
   "author": "",
