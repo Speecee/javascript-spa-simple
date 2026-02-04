@@ -35,4 +35,4 @@ jobs:
       run: npm run audit
     
     - name: Check for package updates
-      run: npx npm-check-updates --warnOnly
+      run: npx npm-check-updates
